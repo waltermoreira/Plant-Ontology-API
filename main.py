@@ -4,12 +4,8 @@ import json
 
 def search(arg):
     
-# arg contains a dict with a single key:value
-# term is PO accession term and is mandatory
-    
-    # Return nothing if client didn't pass in a term parameter
-    if not ('term' in arg):
-       return
+    # arg contains a dict with a single key:value
+    # term is PO accession term and is mandatory
     
     # Validate against a regular expression
     term = arg['term']
